@@ -1,0 +1,24 @@
+.toast-notification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745; /* Green for success */
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 2000;
+  animation: slide-in 0.5s ease-out;
+}
+
+@keyframes slide-in {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 20px;
+    opacity: 1;
+  }
+}

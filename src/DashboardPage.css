@@ -1,0 +1,161 @@
+/* General Dashboard Layout */
+.dashboard-page {
+  font-family: Arial, sans-serif;
+  background-color: #f4f5f7;
+  min-height: 100vh;
+}
+
+/* Logged-in Navbar */
+.dashboard-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-user-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.welcome-message {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Use the same brand style from the landing page */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff6347;
+}
+
+/* Use the same button styles from the landing page */
+.nav-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ff6347;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #ff6347;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.nav-button.primary {
+  background-color: #ff6347;
+  color: #fff;
+}
+.nav-button:hover {
+  opacity: 0.8;
+}
+
+/* Main Content Area */
+.dashboard-content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard-header h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.search-bar input {
+  flex-grow: 1;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.search-bar input:focus {
+  outline: none;
+}
+
+.search-bar button {
+  border: none;
+  background-color: #ff6347;
+  color: white;
+  padding: 0 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Category Buttons */
+.categories {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.category-buttons button {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.category-buttons button:hover {
+  background-color: #ff6347;
+  color: white;
+  border-color: #ff6347;
+}
+
+/* Restaurant Grid */
+.featured-restaurants h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.restaurant-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.restaurant-card:hover {
+  transform: translateY(-5px);
+}
+.restaurant-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.restaurant-card h4 {
+  margin: 1rem 1rem 0.25rem;
+  color: #333;
+}
+.restaurant-card p {
+  margin: 0 1rem 1rem;
+  color: #777;
+}

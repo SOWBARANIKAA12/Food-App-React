@@ -1,0 +1,91 @@
+/* General styling for the page to center the login form */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+  font-family: Arial, sans-serif;
+}
+
+/* The container for the login form */
+.login-container {
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* The form itself */
+.login-form h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #1c1e21;
+}
+
+/* Grouping for labels and inputs */
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #606770;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* The login button */
+.login-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #166fe5;
+}
+
+/* Add this to both LoginPage.css and RegisterPage.css */
+
+.switch-container {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.switch-container p {
+  margin: 0;
+  color: #606770;
+}
+
+.switch-button {
+  background: none;
+  border: none;
+  color: #1877f2;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0;
+  font-size: inherit;
+}
+
+.switch-button:hover {
+  text-decoration: underline;
+}
